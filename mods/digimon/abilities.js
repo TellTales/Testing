@@ -1,5 +1,6 @@
 'use strict';
-exports.BattleAbilities = {
+/**@type {{[k: string]: AbilityData}} */
+let BattleAbilities = {
 	"data": {
 		id: "data",
 		name: "Data",
@@ -552,3 +553,5 @@ exports.BattleAbilities = {
 		desc: "On switch-in, the weather becomes heavy rain that prevents damaging Fire- and Flame-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream or Desolate Land.",
 	},
 };
+
+exports.BattleAbilities = BattleAbilities;
