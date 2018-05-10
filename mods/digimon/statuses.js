@@ -80,7 +80,7 @@ let BattleStatuses = {
 		counterMax: 729,
 		onStart: function (side) {
 			let counter = 3;
-			for (const pokemon of side.active) {
+			for (let pokemon of side.active) {
 				if (pokemon && pokemon.volatiles['stall'] && pokemon.volatiles['stall'].counter >= counter) {
 					counter = pokemon.volatiles['stall'].counter * 3;
 				}
