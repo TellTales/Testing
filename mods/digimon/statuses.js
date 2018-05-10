@@ -1,5 +1,7 @@
 'use strict';
-exports.BattleStatuses = {
+
+/**@type {{[k: string]: ModdedEffectData}} */
+let BattleStatuses = {
 	panic: {
 		// this is a volatile status
 		onStart: function (target, source, sourceEffect) {
@@ -166,3 +168,5 @@ exports.BattleStatuses = {
 		},
 	},
 };
+
+exports.BattleStatuses = BattleStatuses;
