@@ -1,6 +1,7 @@
 'use strict';
 
-exports.BattleMovedex = {
+/**@type {{[k: string]: ModdedMoveData}} */
+let BattleMovedex = {
 	"acidbubble": {
 		accuracy: 90,
 		basePower: 60,
@@ -5372,3 +5373,5 @@ exports.BattleMovedex = {
 		shortDesc: "For 5 turns, sunlight powers Fire/Flame moves.",
 	},
 };
+
+exports.BattleMovedex = BattleMovedex;
