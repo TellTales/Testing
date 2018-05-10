@@ -1,5 +1,6 @@
 'use strict';
-/**@type {{[k: string]: AbilityData}} */
+
+/**@type {{[k: string]: ModdedAbilityData}} */
 let BattleAbilities = {
 	"data": {
 		id: "data",
